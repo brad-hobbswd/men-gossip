@@ -126,3 +126,10 @@ img{max-width:100%}
 .cover-session-layout>.study-guide-art .art-caption{max-width:100%;margin:14px auto 0;padding:0;text-align:center}
 .cover-session-layout>.class-format{align-self:center}
 @media(max-width:650px){.cover-session-layout{grid-template-columns:1fr;align-items:center}.cover-session-layout>.study-guide-art{max-width:min(460px,100%)}.cover-session-layout>.study-guide-art img{height:auto}.cover-session-layout>.class-format{align-self:auto}}
+
+/* INCREASE STUDY GUIDE COVER PROMINENCE */
+.cover-session-layout{grid-template-columns:minmax(300px,1.08fr) minmax(0,1fr);gap:clamp(20px,3vw,34px)}
+.cover-session-layout>.study-guide-art{max-width:none;width:100%}
+.cover-session-layout>.study-guide-art img{width:100%;max-width:none}
+@media(max-width:850px){.cover-session-layout{grid-template-columns:minmax(260px,1fr) minmax(0,1.15fr);gap:18px}}
+@media(max-width:650px){.cover-session-layout{grid-template-columns:1fr}.cover-session-layout>.study-guide-art{max-width:min(520px,100%)} }
