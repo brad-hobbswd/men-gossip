@@ -109,3 +109,12 @@ img{max-width:100%}
 .cover-session-layout .format-heading{margin-bottom:20px}
 @media(max-width:850px){.cover-session-layout{grid-template-columns:minmax(210px,.7fr) minmax(0,1.3fr);gap:16px}.cover-session-layout .format-item{grid-template-columns:32px minmax(0,1fr) auto}.cover-session-layout .format-item p{font-size:.85rem}}
 @media(max-width:650px){.cover-session-layout{grid-template-columns:1fr;gap:22px;margin:22px 0 30px}.cover-session-layout .study-guide-art{max-width:min(420px,86vw)}.cover-session-layout .class-format{margin:0}.cover-session-layout .format-grid{grid-template-columns:1fr}}
+
+/* FINAL SIDE-BY-SIDE ALIGNMENT: COVER + SESSION STRUCTURE */
+.cover-session-layout{grid-template-columns:minmax(260px,.9fr) minmax(0,1.1fr);gap:20px;align-items:stretch}
+.cover-session-layout>.study-guide-art,.cover-session-layout>.class-format{margin:0;min-width:0}
+.cover-session-layout>.study-guide-art{align-self:stretch;justify-content:flex-start}
+.cover-session-layout>.study-guide-art img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:top center}
+.cover-session-layout>.class-format{height:100%;box-sizing:border-box;justify-content:flex-start}
+.cover-session-layout .format-grid{gap:10px}
+@media(max-width:650px){.cover-session-layout{grid-template-columns:1fr;gap:18px}.cover-session-layout>.study-guide-art{max-width:min(420px,100%);margin:0 auto}.cover-session-layout>.study-guide-art img{height:auto;max-height:none}.cover-session-layout>.class-format{height:auto}}
