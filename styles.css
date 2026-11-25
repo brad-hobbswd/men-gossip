@@ -91,3 +91,10 @@ img{max-width:100%}
 .recurring-mark{flex:0 0 auto;color:#c69a55;font:700 .7rem Arial,sans-serif;letter-spacing:.12em}
 .recurring-bottom p{margin:0;color:#d4c2a5;line-height:1.6}
 @media(max-width:620px){.recurring-flow{grid-template-columns:1fr;gap:12px}.recurring-connector{transform:rotate(90deg);justify-self:center;font-size:1.15rem}.recurring-head{margin-bottom:20px}.recurring-bottom{display:block}.recurring-bottom p{margin-top:8px}}
+
+/* STUDY GUIDE COVER AND CONTENT FLOW REFINEMENT */
+.study-guide-art{max-width:440px;margin:24px auto 30px;padding:0 12px}
+.study-guide-art img{width:100%;height:auto;display:block;border:1px solid var(--gold);box-shadow:0 14px 38px rgba(0,0,0,.55);border-radius:2px}
+.art-caption{max-width:390px;margin:12px auto 0;font-size:.88rem;line-height:1.55;color:var(--muted);text-align:center}
+.class-format{margin-top:12px}
+@media(max-width:780px){.study-guide-art{max-width:min(440px,88vw);margin:20px auto 26px;padding:0}.study-guide-art img{border:1px solid var(--gold)}}
