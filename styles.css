@@ -33,3 +33,10 @@ footer a:hover{color:var(--gold)}
 img{max-width:100%}
 @media(max-width:780px){.hero{grid-template-columns:1fr}.hero img{max-width:620px;margin:auto;display:block}header{padding:8px 2%}nav{gap:5px 10px}nav a{font-size:.7rem;padding:6px 2px}main,.wrap{width:92%;padding:24px 0}}
 @media print{body{background:#fff;color:#111}header,footer{display:none}.panel,.card{box-shadow:none;border:1px solid #888;background:white;color:#111}}
+
+/* Index poster banner */
+.poster-hero{width:100%;margin:0 auto 30px;}
+.poster-banner{display:block;width:100%;height:auto;max-height:none;object-fit:contain;border:1px solid var(--gold);box-shadow:0 20px 55px #000a;}
+.hero-content{grid-template-columns:1fr;max-width:950px;margin:0 auto;text-align:center;}
+.hero-content .button{margin:8px;}
+@media(max-width:780px){.poster-hero{margin-bottom:20px}.poster-banner{border-left:0;border-right:0}.hero-content{text-align:left;}}
